@@ -12,6 +12,10 @@ function theme() {
       background: "#000;",
       // background: "#E5E5E5;",
     },
+    fonts: {
+      roboto: "Roboto, sans-serif",
+      condensed: "Roboto Condensed, sans-serif",
+    },
   };
 }
 

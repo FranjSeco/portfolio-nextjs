@@ -1,12 +1,21 @@
 import React from 'react';
 
 import Head from "next/head";
+import Router from "next/router";
 
 import BaseLayout from "../layouts/base";
 
-import { Intro, Header, SocialIcons, Projects } from "../components";
+import { Intro, Header, SocialIcons, Projects, Tech } from "../components";
+
+
 
 export default function Home() {
+
+  React.useEffect(() => {
+    Router.push('/');
+  }, []);
+
+
   return (
     <BaseLayout>
       <Head>
@@ -19,6 +28,7 @@ export default function Home() {
       <Header />
       <Intro />
       <Projects />
+      <Tech />
 
     </BaseLayout>
   );

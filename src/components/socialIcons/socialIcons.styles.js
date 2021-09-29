@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1280px) {
     width: 100vw;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
     flex-direction: row;
     justify-content: center;
     align-content: center;
@@ -60,8 +60,7 @@ export const IconsLink = styled.a`
   align-self: center;
   &:hover {
     cursor: pointer;
-    color: #000;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   @media screen and (max-width: 1280px) {
     color: #fff;

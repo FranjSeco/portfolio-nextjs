@@ -4,9 +4,6 @@ import {
   Container,
   Title,
   ProjectsGrid,
-  ProjectCards,
-  ImageWrapper,
-  ProjectOverlay,
   Overlay,
   ProjectsContainer,
   InfoCardWrapper,
@@ -15,12 +12,14 @@ import {
   ProjectCardWrapper,
   ProjectLink,
   ProjectStack,
-  CloseBtn,
-  ProjectName
+  CloseBtn
 }
   from "./projects.styles";
 
 import { Wrapper } from '../global-components/global-components';
+
+import { ProjectCard } from '../global-components/project-card/project-card';
+
 import primuImage from "../../../public/images/primu.png";
 import apiaryImage from "../../../public/images/apiary.png";
 import aroundBeImage from "../../../public/images/aroundusbackend.png";
@@ -79,48 +78,25 @@ const projectsData = [
 ];
 
 export const Projects = () => {
+  const [elementInOverlay, setElementInOverlay] = React.useState({});
   const [isDisplayed, setIsdisplayed] = React.useState('none');
   const [open, setOpen] = React.useState(false);
-  const [elementInOverlay, setElementInOverlay] = React.useState({});
-  const [fontSize, setFontSize] = React.useState('3rem');
-
-  function handleTextOnHover() {
-    setFontSize('0rem');
-  }
-
-  function handleTextAfterHover() {
-    setFontSize('3rem');
-  }
 
   return (
     <Wrapper transparent id="projects">
+      <Title>My projects</Title>
       <Container>
-        <Title>My projects</Title>
+
         <ProjectsGrid>
           {projectsData.map((element, i) => {
             return (
-              <ProjectCards key={i} onClick={() => {
-                setElementInOverlay(element);
-                setIsdisplayed('flex');
-                setOpen(true);
-              }}
-              onMouseEnter={() => handleTextOnHover()}
-              onMouseLeave={() => handleTextAfterHover()}
-              >
-                <ProjectOverlay>
-                  <ProjectName
-                    style={{ fontSize: `${fontSize}` }}
-                  >{element.title}</ProjectName>
-                </ProjectOverlay>
-                <ImageWrapper>
-                  <Image
-                    layout="intrinsic"
-                    objectFit="cover"
-                    src={element.cover}
-                    alt="primu"
-                  />
-                </ImageWrapper>
-              </ProjectCards>
+              <ProjectCard
+                key={i}
+                element={element}
+                setIsdisplayed={setIsdisplayed}
+                setOpen={setOpen}
+                setElementInOverlay={setElementInOverlay}
+              />
             )
           })}
 
@@ -132,7 +108,8 @@ export const Projects = () => {
           <ProjectsContainer>
             <CloseBtn onClick={() => {
               setOpen(false);
-            }}>
+            }}
+            >
               <div />
               <div />
             </CloseBtn>
@@ -154,54 +131,6 @@ export const Projects = () => {
             </InfoCardWrapper>
           </ProjectsContainer>
         </Overlay>}
-
-
-
-        {/* {projectsData.map((element, i) => {
-          return i % 2 === 0 ? (
-            <ProjectsContainer key={i}>
-              <ProjectCardWrapper>
-                <Image
-                  layout="intrinsic"
-                  objectFit="fill"
-                  src={element.cover}
-                  alt="primu"
-                />
-              </ProjectCardWrapper>
-
-              <InfoCardWrapper>
-                <InfoWrapper>
-                  <ProjectTitle>{element.title}</ProjectTitle>
-                  <ProjectStack>{element.stack}</ProjectStack>
-                  <InfoCard>{element.textOne}</InfoCard>
-                  <ProjectLink target="_blank" href={element.repo}>Github repository</ProjectLink>
-                  <ProjectLink target="_blank" href={element.src}>Link for the web</ProjectLink>
-                </InfoWrapper>
-              </InfoCardWrapper>
-            </ProjectsContainer>
-          ) : (
-            <ProjectsContainer right key={i}>
-            <ProjectCardWrapper>
-              <Image
-                layout="intrinsic"
-                objectFit="fill"
-                src={element.cover}
-                alt="primu"
-              />
-            </ProjectCardWrapper>
-
-            <InfoCardWrapper right>
-              <InfoWrapper right>
-                <ProjectTitle right>{element.title}</ProjectTitle>
-                <ProjectStack right>{element.stack}</ProjectStack>
-                <InfoCard right>{element.textOne}</InfoCard>
-                <ProjectLink target="_blank" href={element.repo}>Github repository</ProjectLink>
-                <ProjectLink target="_blank" href={element.src}>Link for the web</ProjectLink>
-              </InfoWrapper>
-            </InfoCardWrapper>
-          </ProjectsContainer>
-          )
-        })} */}
       </Container>
 
     </Wrapper>

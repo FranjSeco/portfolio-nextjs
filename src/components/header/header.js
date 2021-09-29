@@ -28,8 +28,8 @@ export const Header = () => {
   });
 
   // BURGER BTN
-  const [isDisplayed, setIsDisplayed] = React.useState("none");
-  const [open, setOpen] = React.useState("open");
+  const [isDisplayed, setIsDisplayed] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
   const [getWidth, setGetWidth] = React.useState();
 
@@ -45,11 +45,11 @@ export const Header = () => {
         window.removeEventListener("resize", updateDimensions);
       }
     }
-    
+
   }, []);
 
   const handleBurger = () => {
-    setIsDisplayed(isDisplayed === "none" ? "flex" : "none");
+    setIsDisplayed(isDisplayed === false ? true : false);
   };
 
   return (
@@ -63,11 +63,11 @@ export const Header = () => {
       </Logo>
       {getWidth < 761 ? (
         <>
-          <BurgerWrapper onClick={handleBurger}>
+          <BurgerWrapper onClick={() => handleBurger()}>
             <Burger open={open} setOpen={setOpen} isScrolling={isScrolling} />
           </BurgerWrapper>
-          <Overlay isDisplayed={isDisplayed}>
-            <MenuWrapperLow isDisplayed={isDisplayed}>
+          {isDisplayed && <Overlay isDisplayed={isDisplayed}>
+            <MenuWrapperLow>
               <NavMenu>
                 <Link href="#intro">
                   <NavLink>Intro</NavLink>
@@ -83,7 +83,8 @@ export const Header = () => {
                 </Link>
               </NavMenu>
             </MenuWrapperLow>
-          </Overlay>
+          </Overlay>}
+
         </>
       ) : (
         <NavMenu>

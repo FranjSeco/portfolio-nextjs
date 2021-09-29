@@ -11,6 +11,10 @@ export const Container = styled.div`
   position: relative;
   z-index: 1;
 
+  @media screen and (max-width: 1280px) {
+    padding: 150px 50px 150px 50px;
+  }
+
   @media screen and (max-width: 640px) {
     /* padding: 100px 50px 100px 50px; */
     padding: 0;
@@ -46,6 +50,10 @@ export const IntroWrapper = styled.div`
   justify-content: center;
   align-content: center;
   align-self: center;
+
+  @media screen and (max-width: 1280px) {
+    width: 95vw;
+  }
 
   @media screen and (max-width: 830px) {
     margin: 0 auto 50px auto;
@@ -158,6 +166,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 380px) {
     margin: 0 auto;
+    width: 284px;
   }
 `;
 

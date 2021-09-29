@@ -41,13 +41,13 @@ export const Disc = styled(DiCssdeck)`
   transform: translateX(-10px);
   font-size: 6rem;
 
-  @media screen and (max-width: 761px) {
-    font-size: 4rem;
-  }
-
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 820px) {
     font-size: 3rem;
   }
+
+  /* @media screen and (max-width: 320px) {
+    font-size: 3rem;
+  } */
 `;
 
 export const AnchorLogo = styled.a`
@@ -62,7 +62,7 @@ export const AnchorLogo = styled.a`
 `;
 
 export const Overlay = styled.div`
-  display: ${(props) => (props.isDisplayed === "flex" ? "none" : "flex")};
+  display: ${(props) => (props.isDisplayed ? "flex" : "none")};
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
@@ -85,7 +85,11 @@ export const MenuWrapperLow = styled.div`
   z-index: 1;
   /* transform: translate(-3px, -2px); */
   @media screen and (max-width: 760px) {
-    right: 0;
+    box-sizing: border-box;
+    width: 95%;
+    right: 50%;
+    transform: translateX(50%);
+
   }
   @media screen and (max-width: 320px) {
     top: 7rem;
@@ -107,7 +111,7 @@ export const NavMenu = styled.div.attrs({className: 'navbar'})`
 
 export const NavLink = styled.a`
   font-size: 3rem;
-  font-weight: bolder;
+  font-weight: 900;
   line-height: 32px;
   z-index: 1001;
   text-transform: uppercase;
@@ -115,7 +119,7 @@ export const NavLink = styled.a`
   margin: auto 10px;
   &:hover {
     /* color: rgb(10, 25, 47); */
-    color: ${(props) => (props.isScrolling ? "#000" : "rgba(255, 255, 255, 1)")};
+    /* color: ${(props) => (props.isScrolling ? "#000" : "rgba(255, 255, 255, 1)")}; */
     cursor: pointer;
     transform: translateY(-3px);
   }

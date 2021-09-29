@@ -1,6 +1,22 @@
 import React from "react";
-import { Container } from "./tech.styles";
+import { Wrapper } from "../global-components/global-components";
+import {
+  Title,
+  Container,
+  TechWrapper
+} from "./tech.styles";
 
 export const Tech = () => {
-  return <Container id="tech" />;
+  return (
+    <Wrapper dark>
+      <Title>Technologies</Title>
+      <Container id="tech">
+
+        <TechWrapper></TechWrapper>
+        <TechWrapper></TechWrapper>
+        <TechWrapper></TechWrapper>
+      </Container>
+    </Wrapper>
+
+  );
 };

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
+
 const GlobalStyles = createGlobalStyle`
   ${normalize};
   * {
@@ -10,7 +11,6 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.6rem;
     margin: 0;
     padding:0;
-    font-family: "Verdana";
   }
   html {
     scrollbar-width: none;
@@ -36,6 +36,9 @@ const GlobalStyles = createGlobalStyle`
     -o-transition: all 350ms ease-in-out;
     -webkit-transition: all 350ms ease-in-out;
     transition: all 350ms ease-in-out;
+    /* font-family: "Verdana"; */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: "Inter";
   }
   a {
     text-decoration: none;

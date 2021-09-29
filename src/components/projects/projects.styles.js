@@ -1,6 +1,4 @@
-import styled, { css } from "styled-components";
-import Image from "next/image";
-import GlobalCard from "../global-components/global-card/global-card";
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -11,7 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-content: space-between;
   justify-content: flex-start;
-  padding: 0 0 50px 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 `;
@@ -23,108 +21,20 @@ export const Title = styled.h2`
   line-height: 80px;
   margin: 0 0 30px 0;
   display: inline-block;
+  align-self: flex-start;
   z-index: 1;
 `;
 
 export const ProjectsGrid = styled.div`
-  max-width: 1280px;
+  /* max-width: 1280px; */
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: auto(2, 1fr);
-  grid-gap: 0;
+  grid-gap: 30px;
   margin: 0 auto;
   place-content: center;
-`;
-
-export const ProjectCards = styled.div`
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.2px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  /* border-radius: 5px; */
-
-  &:hover {
-    background-color: rgb(17, 34, 64);
-  }
-`;
-export const ProjectOverlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  text-align: justify;
-
-  transition-property: background-color font-size;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 0rem;
-  }
-`;
-
-export const ProjectName = styled.h3.attrs({ className: "project-title" })`
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  /* font-size: 3rem; */
-  font-weight: 900;
-  color: #fbc531;
-  transition-property: background-color font-size;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
-`;
-
-export const CloseBtn = styled.div`
-  background-color: #000;
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-items: space-between;
-  align-items: space-between;
-  transition-property: transform;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.1s;
-
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  div {
-    width: 3rem;
-    height: 0.25rem;
-    background-color: #fff;
-    position: fixed;
-
-    :first-child {
-      transform: translateY(15px) rotate(45deg);
-    }
-
-    :nth-child(2) {
-      transform: translateY(15px) rotate(-45deg);
-    }
-
-  }
 `;
 
 export const Overlay = styled.div`
@@ -140,17 +50,6 @@ export const Overlay = styled.div`
   bottom: 0;
   left: 0;
   overflow: hidden;
-`;
-
-export const ImageWrapper = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 80%;
-  height: auto;
-  &:hover {
-    background-color: rgb(17, 34, 64);
-  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -169,36 +68,144 @@ export const ProjectsContainer = styled.div`
   box-sizing: border-box; 
   border-radius: 5px;
   column-gap: 5px;
+  /* overflow: hidden; */
+
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 95%;
+    height: 70%;
+  }
+`;
+
+
+export const CloseBtn = styled.div.attrs({ className: "close-btn" })`
+  background-color: transparent;
+  position: absolute;
+  z-index: 20000;
+  top: -40px;
+  right: -40px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  align-items: space-between;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  div {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #fff;
+    position: fixed;
+
+    :first-child {
+      transform: translateY(15px) rotate(45deg);
+    }
+
+    :nth-child(2) {
+      transform: translateY(15px) rotate(-45deg);
+    }
+
+    @media screen and (max-width: 450px) {
+      height: 0.3rem;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+    top: -40px;
+    right: -5px;
+  }
 `;
 
 export const ProjectCardWrapper = styled.div`
   display: flex;
   align-content: center;
   width: 100%;
-  height: 100%;
   position: relative;
-  &:hover {
-    /* cursor: pointer; */
+
+  @media screen and (max-width: 1060px) {
+    height: 70%;
+  }
+  @media screen and (max-width: 920px) {
+    height: 60%;
+  }
+
+  @media screen and (max-width: 490px) {
+    height: 50%;
+  }
+
+  @media screen and (max-width: 390px) {
+    height: 40%;
   }
 `;
-
 
 export const InfoCardWrapper = styled.div`
   width: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
   row-gap: 10px;
   z-index: 5;
   background-color: rgba(17, 34, 64, 1);
+  @media screen and (max-width: 1060px) {
+    justify-content: flex-start;
+    height: 30%;
+  }
+  @media screen and (max-width: 920px) {
+    height: 40%;
+  }
+  @media screen and (max-width: 490px) {
+    height: 50%;
+  }
+
+  @media screen and (max-width: 390px) {
+    height: 60%;
+  }
 `;
 
 
-export const InfoCard = styled(GlobalCard).attrs({ className: "info-card" })`
-  width: 80%;
-  margin: 20px auto;
+export const ProjectTitle = styled.h3`
+  font-size: 2.5rem;
+  margin: 0 0 0 auto;
+  padding: 20px;
+
+  @media screen and (max-width: 1060px) {
+    padding: 10px 10px 0 10px;
+  }
+`;
+
+export const ProjectStack = styled.p`
+    font-size: 2rem;
+    margin: 0 20px 20px auto;
+
+    @media screen and (max-width: 1060px) {
+    font-size: 1.5rem;
+    margin: 0 10px 0 auto;
+  }
+
+  @media screen and (max-width: 415px) {
+    font-size: 1.5rem;
+    margin: 0 auto 0 10px;
+  }
+`;
+
+
+export const InfoCard = styled.div.attrs({ className: "info-card" })`
+  width: 90%;
+  margin: 0 20px auto auto;
   background-color: rgb(17, 34, 64);
   box-shadow: rgba(0, 0, 0, 0.7) 2.4px 2.4px 3.2px;
   position: relative;
@@ -209,26 +216,21 @@ export const InfoCard = styled(GlobalCard).attrs({ className: "info-card" })`
   justify-content: center;
   align-content: flex-start;
 
-  &:last-child {
-    justify-content: space-between;
+  @media screen and (max-width: 1060px) {
+    width: 97%;
+    margin: 0 auto;
   }
-`;
 
-export const ProjectTitle = styled.h3`
-  font-size: 2.5rem;
-  margin: ${(props) => props.right ? '0 auto 0 0' : '0 0 0 auto'};
-  padding: 20px;
-`;
-
-export const ProjectStack = styled.p`
-    font-size: 2rem;
-    margin: ${(props) => props.right ? '0 auto 0 20px' : '0 20px 0 auto'};
+  @media screen and (max-width: 415px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const ProjectLink = styled.a.attrs({ className: "info-link" })`
   padding: 20px;
   position: absolute;
   bottom: 0;
+  
   &:hover {
     color: #a4b0be;
     cursor: pointer;
@@ -236,6 +238,10 @@ export const ProjectLink = styled.a.attrs({ className: "info-link" })`
 
   &:last-child {
     right: 0;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 5px;
   }
 `;
 
