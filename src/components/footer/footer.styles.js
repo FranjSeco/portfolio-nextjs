@@ -4,8 +4,8 @@ export const Container = styled.footer`
   position: relative;
   margin: 0;
   width: 100%;
-  height: 100px;
-  background-color: transparent;
+  height: 150px;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -31,10 +31,14 @@ export const Credits = styled.div`
 export const Text = styled.div`
   font-size: 25px;
   font-weight: 900;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   align-self: center;
   @media screen and (max-width: 600px) {
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
   }
 `;
 

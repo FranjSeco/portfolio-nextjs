@@ -7,7 +7,7 @@ export const ProjectCards = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 3.2px;
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 3.2px;
     cursor: pointer;
     position: relative;
     overflow: hidden;

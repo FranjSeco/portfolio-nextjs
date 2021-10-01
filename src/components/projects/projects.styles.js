@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #fff;
+  color: #000;
   font-weight: 900;
   font-size: 60px;
   line-height: 80px;
@@ -23,6 +23,11 @@ export const Title = styled.h2`
   display: inline-block;
   align-self: flex-start;
   z-index: 1;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 40px;
+    margin: 0 0 20px 0;
+  }
 `;
 
 export const ProjectsGrid = styled.div`
@@ -35,6 +40,7 @@ export const ProjectsGrid = styled.div`
   grid-gap: 30px;
   margin: 0 auto;
   place-content: center;
+  padding: 10px;
 `;
 
 export const Overlay = styled.div`
@@ -56,7 +62,8 @@ export const ProjectsContainer = styled.div`
   margin: auto;
   width: 80%;
   height: 50%;
-  background-color: #273c75;
+  /* background-color: #273c75; */
+  background-color: #fff;
   padding: 5px;
   display: flex;
   flex-direction: row;

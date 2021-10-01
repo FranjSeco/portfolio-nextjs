@@ -5,9 +5,7 @@ import Router from "next/router";
 
 import BaseLayout from "../layouts/base";
 
-import { Intro, Header, SocialIcons, Projects, Tech } from "../components";
-
-
+import { Intro, Header, SocialIcons, Projects, Tech, About, Footer } from "../components";
 
 export default function Home() {
 
@@ -27,8 +25,10 @@ export default function Home() {
       <SocialIcons />
       <Header />
       <Intro />
-      <Projects />
       <Tech />
+      <Projects />
+      <About />
+      <Footer />
 
     </BaseLayout>
   );

@@ -83,7 +83,7 @@ export const Projects = () => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <Wrapper transparent id="projects">
+    <Wrapper white id="projects">
       <Title>My projects</Title>
       <Container>
 

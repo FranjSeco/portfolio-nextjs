@@ -3,7 +3,7 @@ import { DiCssdeck } from "react-icons/di";
 
 export const Container = styled.nav`
   width: 100%;
-  height: ${(props) => (props.isScrolling ? "75px" : "90px")};
+  height: ${(props) => (props.isScrolling ? "55px" : "90px")};
   margin: 0;
   display: flex;
   align-content: center;
@@ -115,13 +115,17 @@ export const NavLink = styled.a`
   line-height: 32px;
   z-index: 1001;
   text-transform: uppercase;
-  transition: 0.4s ease;
+  transition-property: transform border-bottom;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.1s;
   margin: auto 10px;
+  border-bottom: none;
   &:hover {
     /* color: rgb(10, 25, 47); */
     /* color: ${(props) => (props.isScrolling ? "#000" : "rgba(255, 255, 255, 1)")}; */
     cursor: pointer;
     transform: translateY(-3px);
+    border-bottom: 2px solid #000;
   }
 
   @media screen and (max-width: 830px) {

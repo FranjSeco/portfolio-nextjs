@@ -16,7 +16,7 @@ export const Wrapper = styled.section`
   width: 100%;
   background-color: #fff;
   color: #000;
-  padding: 100px 90px;
+  padding: 50px 90px 70px 90px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -41,13 +41,19 @@ export const Wrapper = styled.section`
       background-color: transparent;
       color: #fff;
   `}
+  ${({ white }) =>
+    white &&
+    css`
+      background-color: #fff;
+      color: #fff;
+  `}
 
   @media (min-width: 601px) and (max-width: 1024px) {
     padding: 100px 40px;
   }
 
   @media screen and (max-width: 600px) {
-    padding: 60px 16px;
+    padding: 80px 16px;
   }
 
   @media screen and (max-width: 335px) {

@@ -7,7 +7,6 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   padding: 150px 100px 100px 100px;
-  /* margin-bottom: 50px; */
   position: relative;
   z-index: 1;
 
@@ -16,7 +15,6 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    /* padding: 100px 50px 100px 50px; */
     padding: 0;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -68,16 +66,6 @@ export const IntroWrapper = styled.div`
   @media screen and (max-width: 320px) {
   }
 `;
-
-// export const SectionAnimation = styled.div`
-//     position: absolute;
-//     right: 10px;
-//     top: 100px;
-//     width: 800px;
-//     height: 900px;
-//     z-index: 10000;
-// `;
-
 export const Paragraph = styled.p`
   color: #fff;
   font-style: normal;

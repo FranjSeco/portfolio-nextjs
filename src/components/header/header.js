@@ -72,11 +72,11 @@ export const Header = () => {
                 <Link href="#intro">
                   <NavLink>Intro</NavLink>
                 </Link>
-                <Link href="#projects">
-                  <NavLink>Projects</NavLink>
-                </Link>
                 <Link href="#tech">
                   <NavLink>Technologies</NavLink>
+                </Link>
+                <Link href="#projects">
+                  <NavLink>Projects</NavLink>
                 </Link>
                 <Link href="#about">
                   <NavLink>About</NavLink>
@@ -91,11 +91,11 @@ export const Header = () => {
           <Link href="#intro">
             <NavLink>Intro</NavLink>
           </Link>
-          <Link href="#projects">
-            <NavLink>Projects</NavLink>
-          </Link>
           <Link href="#tech">
             <NavLink>Technologies</NavLink>
+          </Link>
+          <Link href="#projects">
+            <NavLink>Projects</NavLink>
           </Link>
           <Link href="#about">
             <NavLink>About</NavLink>
