@@ -9,7 +9,7 @@ export const Title = styled.h2`
   display: inline-block;
   align-self: flex-start;
   z-index: 1;
-  
+
   @media screen and (max-width: 500px) {
     font-size: 40px;
     margin: 0 0 20px 0;
@@ -26,7 +26,7 @@ export const Container = styled.div`
   justify-content: flex-start;
   padding: 0;
   position: relative;
-  
+
   @media screen and (max-width: 500px) {
     padding: 0;
   }
@@ -59,5 +59,3 @@ export const AboutText = styled.p`
     line-height: 30px;
   }
 `;
-
-

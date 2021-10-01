@@ -10,7 +10,8 @@
     "airbnb-base",
     "airbnb-base/rules/strict",
     "airbnb/rules/react",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended"
   ],
   "env": {
     "browser": true,

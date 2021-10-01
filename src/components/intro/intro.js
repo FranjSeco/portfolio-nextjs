@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Img,
-  Paragraph,
-  Title,
-  Subtitle,
-  Text,
-  IntroWrapper,
-  HiremeIntro,
-} from "./intro.styles";
+import { Container, Img, Paragraph, Title, Text, IntroWrapper, HiremeIntro } from "./intro.styles";
 // import { BgAnimation } from '../../components/bgAnimation/bgAnimation'
 
 import introImage from "../../../public/images/bg-water.jpg";
@@ -35,7 +26,8 @@ export const Intro = () => {
         <Title>Francisco Seco</Title>
         {/* <Subtitle>I build things for the web.</Subtitle> */}
         <Text>
-          I'm full-stack developer specializing in building web experiences with React and NodeJs. Currently, I'm focused on building accessible and meaningful webs.
+          I&apos;m full-stack developer specializing in building web experiences with React and
+          NodeJs. Currently, I&apos;m focused on building accessible and meaningful webs.
         </Text>
         <HiremeIntro />
       </IntroWrapper>

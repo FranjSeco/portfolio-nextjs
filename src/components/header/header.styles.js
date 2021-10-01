@@ -89,14 +89,13 @@ export const MenuWrapperLow = styled.div`
     width: 95%;
     right: 50%;
     transform: translateX(50%);
-
   }
   @media screen and (max-width: 320px) {
     top: 7rem;
   }
 `;
 
-export const NavMenu = styled.div.attrs({className: 'navbar'})`
+export const NavMenu = styled.div.attrs({ className: "navbar" })`
   margin: 0;
   display: flex;
   align-content: center;

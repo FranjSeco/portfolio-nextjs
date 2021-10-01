@@ -1,27 +1,26 @@
 import styled from "styled-components";
 
 export const ProjectCards = styled.div`
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 3.2px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 3.2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
 
-    &:hover {
-        background-color: rgb(17, 34, 64);
-    }
+  &:hover {
+    background-color: rgb(17, 34, 64);
+  }
 
-    @media screen and (max-width: 680px) {
-      height: 200px;
+  @media screen and (max-width: 680px) {
+    height: 200px;
   }
 `;
-
 
 export const ProjectOverlay = styled.div`
   position: absolute;
@@ -60,7 +59,6 @@ export const ProjectName = styled.h3.attrs({ className: "project-title" })`
   transition-duration: 0.3s;
 `;
 
-
 export const ImageWrapper = styled.div`
   position: absolute;
   left: 50%;
@@ -74,7 +72,7 @@ export const ImageWrapper = styled.div`
 
 export const ViewProject = styled.div`
   width: 100px;
-  height : 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: rgb(27, 44, 74);
   box-shadow: rgba(0, 0, 0, 0.75) 5px 5px 3.2px;
@@ -83,7 +81,7 @@ export const ViewProject = styled.div`
   transition-property: display;
   transition-timing-function: ease-in-out;
   transition-duration: 1s;
-  display: ${(props) => props.viewProject ? 'flex' : 'none'};
+  display: ${(props) => (props.viewProject ? "flex" : "none")};
 `;
 
 export const ViewProjectText = styled.p`
@@ -102,7 +100,3 @@ export const ViewProjectText = styled.p`
     transform: scale(1.3);
   }
 `;
-
-
-
-

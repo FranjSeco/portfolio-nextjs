@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1280px) {
     width: 100vw;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     flex-direction: row;
     justify-content: center;
     align-content: center;

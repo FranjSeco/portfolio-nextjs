@@ -23,7 +23,7 @@ export const Title = styled.h2`
   display: inline-block;
   align-self: flex-start;
   z-index: 1;
-  
+
   @media screen and (max-width: 500px) {
     font-size: 40px;
     margin: 0 0 20px 0;
@@ -44,7 +44,7 @@ export const ProjectsGrid = styled.div`
 `;
 
 export const Overlay = styled.div`
-  display: ${(props) => (props.isDisplayed)};
+  display: ${(props) => props.isDisplayed};
   flex-direction: column;
   justify-items: center;
   align-items: center;
@@ -72,7 +72,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-content: center;
   align-self: center;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border-radius: 5px;
   column-gap: 5px;
   /* overflow: hidden; */
@@ -87,7 +87,6 @@ export const ProjectsContainer = styled.div`
     height: 70%;
   }
 `;
-
 
 export const CloseBtn = styled.div.attrs({ className: "close-btn" })`
   background-color: transparent;
@@ -126,7 +125,7 @@ export const CloseBtn = styled.div.attrs({ className: "close-btn" })`
 
     @media screen and (max-width: 450px) {
       height: 0.3rem;
-  }
+    }
   }
 
   @media screen and (max-width: 450px) {
@@ -183,7 +182,6 @@ export const InfoCardWrapper = styled.div`
   }
 `;
 
-
 export const ProjectTitle = styled.h3`
   font-size: 2.5rem;
   margin: 0 0 0 auto;
@@ -195,10 +193,10 @@ export const ProjectTitle = styled.h3`
 `;
 
 export const ProjectStack = styled.p`
-    font-size: 2rem;
-    margin: 0 20px 20px auto;
+  font-size: 2rem;
+  margin: 0 20px 20px auto;
 
-    @media screen and (max-width: 1060px) {
+  @media screen and (max-width: 1060px) {
     font-size: 1.5rem;
     margin: 0 10px 0 auto;
   }
@@ -208,7 +206,6 @@ export const ProjectStack = styled.p`
     margin: 0 auto 0 10px;
   }
 `;
-
 
 export const InfoCard = styled.div.attrs({ className: "info-card" })`
   width: 90%;
@@ -237,7 +234,7 @@ export const ProjectLink = styled.a.attrs({ className: "info-link" })`
   padding: 20px;
   position: absolute;
   bottom: 0;
-  
+
   &:hover {
     color: #a4b0be;
     cursor: pointer;
@@ -251,4 +248,3 @@ export const ProjectLink = styled.a.attrs({ className: "info-link" })`
     padding: 5px;
   }
 `;
-

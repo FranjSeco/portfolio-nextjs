@@ -1,5 +1,5 @@
 /* eslint-disable no-shadow */
-import styled, { css }  from "styled-components";
+import styled, { css } from "styled-components";
 
 export const GlobalWrapper = styled.main`
   width: 100%;
@@ -26,27 +26,27 @@ export const Wrapper = styled.section`
   ${({ dark }) =>
     dark &&
     css`
-      background-color: #1A1B22;
+      background-color: #1a1b22;
       color: #fff;
-  `}
+    `}
   ${({ neutral }) =>
     neutral &&
     css`
       background-color: #e5e5e5;
       color: #000;
-  `}
+    `}
   ${({ transparent }) =>
     transparent &&
     css`
       background-color: transparent;
       color: #fff;
-  `}
+    `}
   ${({ white }) =>
     white &&
     css`
       background-color: #fff;
       color: #fff;
-  `}
+    `}
 
   @media (min-width: 601px) and (max-width: 1024px) {
     padding: 100px 40px;

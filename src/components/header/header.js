@@ -43,19 +43,18 @@ export const Header = () => {
       window.addEventListener("resize", updateDimensions);
       return () => {
         window.removeEventListener("resize", updateDimensions);
-      }
+      };
     }
-
   }, []);
 
   const handleBurger = () => {
-    setIsDisplayed(isDisplayed === false ? true : false);
+    setIsDisplayed(isDisplayed === false);
   };
 
   return (
     <Container isScrolling={isScrolling}>
       <Logo>
-        <Link href="#intro">
+        <Link href="#intro" passHref>
           <AnchorLogo>
             <Disc />
           </AnchorLogo>
@@ -66,38 +65,39 @@ export const Header = () => {
           <BurgerWrapper onClick={() => handleBurger()}>
             <Burger open={open} setOpen={setOpen} isScrolling={isScrolling} />
           </BurgerWrapper>
-          {isDisplayed && <Overlay isDisplayed={isDisplayed}>
-            <MenuWrapperLow>
-              <NavMenu>
-                <Link href="#intro">
-                  <NavLink>Intro</NavLink>
-                </Link>
-                <Link href="#tech">
-                  <NavLink>Technologies</NavLink>
-                </Link>
-                <Link href="#projects">
-                  <NavLink>Projects</NavLink>
-                </Link>
-                <Link href="#about">
-                  <NavLink>About</NavLink>
-                </Link>
-              </NavMenu>
-            </MenuWrapperLow>
-          </Overlay>}
-
+          {isDisplayed && (
+            <Overlay isDisplayed={isDisplayed}>
+              <MenuWrapperLow>
+                <NavMenu>
+                  <Link href="#intro" passHref>
+                    <NavLink>Intro</NavLink>
+                  </Link>
+                  <Link href="#tech" passHref>
+                    <NavLink>Technologies</NavLink>
+                  </Link>
+                  <Link href="#projects" passHref>
+                    <NavLink>Projects</NavLink>
+                  </Link>
+                  <Link href="#about" passHref>
+                    <NavLink>About</NavLink>
+                  </Link>
+                </NavMenu>
+              </MenuWrapperLow>
+            </Overlay>
+          )}
         </>
       ) : (
         <NavMenu>
-          <Link href="#intro">
+          <Link href="#intro" passHref>
             <NavLink>Intro</NavLink>
           </Link>
-          <Link href="#tech">
+          <Link href="#tech" passHref>
             <NavLink>Technologies</NavLink>
           </Link>
-          <Link href="#projects">
+          <Link href="#projects" passHref>
             <NavLink>Projects</NavLink>
           </Link>
-          <Link href="#about">
+          <Link href="#about" passHref>
             <NavLink>About</NavLink>
           </Link>
         </NavMenu>

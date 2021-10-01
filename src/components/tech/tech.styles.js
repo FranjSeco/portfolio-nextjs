@@ -19,7 +19,7 @@ export const Title = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: auto;
-  background-color: rgba(0,0,0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -45,7 +45,7 @@ export const TechWrapper = styled.div`
   align-content: center;
   text-justify: center;
 
-  &:nth-child(1) {    
+  &:nth-child(1) {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 
@@ -77,12 +77,12 @@ export const TechWrapper = styled.div`
 `;
 
 export const TechTitleWrapper = styled.div`
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    justify-self: flex-start;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  justify-self: flex-start;
 `;
 
 export const TechStackTitle = styled.h3`
@@ -95,7 +95,6 @@ export const TechStackTitle = styled.h3`
     font-size: 2rem;
   }
 `;
-
 
 export const Techs = styled.div`
   width: 100%;

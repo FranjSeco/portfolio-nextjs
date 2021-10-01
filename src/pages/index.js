@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import Head from "next/head";
 import Router from "next/router";
@@ -8,11 +8,9 @@ import BaseLayout from "../layouts/base";
 import { Intro, Header, SocialIcons, Projects, Tech, About, Footer } from "../components";
 
 export default function Home() {
-
   React.useEffect(() => {
-    Router.push('/');
+    Router.push("/");
   }, []);
-
 
   return (
     <BaseLayout>
@@ -29,7 +27,6 @@ export default function Home() {
       <Projects />
       <About />
       <Footer />
-
     </BaseLayout>
   );
 }

@@ -1,5 +1,24 @@
 import React from "react";
-import { Wrapper } from "../global-components/global-components";
+
+import { Javascript } from "@styled-icons/simple-icons/Javascript";
+import { ReactLogo } from "@styled-icons/simple-icons/ReactLogo";
+import { Nextdotjs } from "@styled-icons/simple-icons/Nextdotjs";
+import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
+import { Materialui } from "@styled-icons/simple-icons/Materialui";
+import { TailwindCss } from "@styled-icons/boxicons-logos/TailwindCss";
+import { Css3 } from "@styled-icons/boxicons-logos/Css3";
+import { Html5 } from "@styled-icons/boxicons-logos/Html5";
+import { Nodedotjs } from "@styled-icons/simple-icons/Nodedotjs";
+import { Express } from "@styled-icons/simple-icons/Express";
+import { Postman } from "@styled-icons/simple-icons/Postman";
+import { Jest } from "@styled-icons/simple-icons/Jest";
+import { GoogleCloud } from "@styled-icons/boxicons-logos/GoogleCloud";
+import { Heroku } from "@styled-icons/simple-icons/Heroku";
+import { Python } from "@styled-icons/simple-icons/Python";
+import { Typescript } from "@styled-icons/simple-icons/Typescript";
+import { Netlify } from "@styled-icons/simple-icons/Netlify";
+import { Vuejs } from "@styled-icons/boxicons-logos/Vuejs";
+import { Angular } from "@styled-icons/simple-icons/Angular";
 import {
   Title,
   Container,
@@ -7,28 +26,8 @@ import {
   TechTitleWrapper,
   TechStackTitle,
   Techs,
-  TechItem
 } from "./tech.styles";
-
-import { Javascript } from '@styled-icons/simple-icons/Javascript';
-import { ReactLogo } from '@styled-icons/simple-icons/ReactLogo';
-import { Nextdotjs } from '@styled-icons/simple-icons/Nextdotjs';
-import { Styledcomponents } from '@styled-icons/simple-icons/Styledcomponents';
-import { Materialui } from '@styled-icons/simple-icons/Materialui';
-import { TailwindCss } from '@styled-icons/boxicons-logos/TailwindCss';
-import { Css3 } from '@styled-icons/boxicons-logos/Css3';
-import { Html5 } from '@styled-icons/boxicons-logos/Html5';
-import { Nodedotjs } from '@styled-icons/simple-icons/Nodedotjs';
-import { Express } from '@styled-icons/simple-icons/Express';
-import { Postman } from '@styled-icons/simple-icons/Postman';
-import { Jest } from '@styled-icons/simple-icons/Jest';
-import { GoogleCloud } from '@styled-icons/boxicons-logos/GoogleCloud';
-import { Heroku } from '@styled-icons/simple-icons/Heroku';
-import { Python } from '@styled-icons/simple-icons/Python';
-import { Typescript } from '@styled-icons/simple-icons/Typescript';
-import { Netlify } from '@styled-icons/simple-icons/Netlify';
-import { Vuejs } from '@styled-icons/boxicons-logos/Vuejs';
-import { Angular } from '@styled-icons/simple-icons/Angular';
+import { Wrapper } from "../global-components/global-components";
 // import {} from '';
 // import {} from '';
 
@@ -43,7 +42,7 @@ export const Tech = () => {
           </TechTitleWrapper>
 
           <Techs>
-          <Javascript/>
+            <Javascript />
             <ReactLogo />
             <Nextdotjs />
             <Styledcomponents />
@@ -52,7 +51,6 @@ export const Tech = () => {
             <Css3 />
             <Html5 />
             <Netlify />
-
           </Techs>
         </TechWrapper>
         <TechWrapper>
@@ -61,14 +59,12 @@ export const Tech = () => {
           </TechTitleWrapper>
 
           <Techs>
-
             <Nodedotjs />
             <Express />
             <Postman />
             <Jest />
             <GoogleCloud />
             <Heroku />
-
           </Techs>
         </TechWrapper>
         <TechWrapper>
@@ -84,6 +80,5 @@ export const Tech = () => {
         </TechWrapper>
       </Container>
     </Wrapper>
-
   );
 };
