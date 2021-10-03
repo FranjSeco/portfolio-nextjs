@@ -44,7 +44,7 @@ export const TextWrapper = styled.div`
 export const AboutText = styled.p`
   color: #000;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 60px;
   width: auto;
   margin: 0 0 20px 0;

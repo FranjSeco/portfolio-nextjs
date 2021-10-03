@@ -45,6 +45,7 @@ export const Header = () => {
         window.removeEventListener("resize", updateDimensions);
       };
     }
+    return undefined;
   }, []);
 
   const handleBurger = () => {
