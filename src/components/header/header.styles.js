@@ -67,9 +67,9 @@ export const AnchorLogo = styled.a`
 
 export const Overlay = styled.div`
   display: ${(props) => (props.isDisplayed ? "flex" : "none")};
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 110vh;
   top: 0;
