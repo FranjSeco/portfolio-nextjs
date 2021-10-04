@@ -14,8 +14,8 @@ export const About = () => {
             planing to grow my stack with React Native and TypeScript as soon as possible, in order
             to match the current job&apos;s needs. I consider myself a very motivated and hard
             worker person, with an eye for the detail. I understand the importance of the design,
-            therefore I always try to pay extra attention to mobile design and the
-            responsiveness for the most used resolutions.
+            therefore I always try to pay extra attention to mobile design and the responsiveness
+            for the most used resolutions.
             <br />
             <br />
             If my work has caught your attention, please do not hesitate to contact me.

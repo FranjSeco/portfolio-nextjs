@@ -124,7 +124,7 @@ export const NavLink = styled.a`
     /* color: ${(props) => (props.isScrolling ? "#000" : "rgba(255, 255, 255, 1)")}; */
     cursor: pointer;
     transform: translateY(-3px);
-    border-bottom: ${(props) => (props.burger ? "none" : "2px solid #000")}
+    border-bottom: ${(props) => (props.burger ? "none" : "2px solid #000")};
   }
 
   @media screen and (max-width: 830px) {
