@@ -42,7 +42,7 @@ const projectsData = [
     title: "Apiary",
     stack: "ReactJS, Styled-Components, Contentful",
     textOne:
-      "Apiary is a Yandex’s project that offer international companies to build or renew their website by Practicum’s students. This project allows students to get experience in real world project. The project uses a CMS that allowes the client to add, modify or remove information in certain sections of the page.",
+      "Apiary is a Yandex project that offer international companies to build or renew their website by Practicum’s students. This project allows students to get experience in real world project. The project uses a CMS that allowes the client to add, modify or remove information in certain sections of the page.",
     repo: "https://github.com/olivcamj/apiary",
   },
   {
