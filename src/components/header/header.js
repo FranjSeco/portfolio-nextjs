@@ -71,16 +71,16 @@ export const Header = () => {
               <MenuWrapperLow>
                 <NavMenu>
                   <Link href="#intro" passHref>
-                    <NavLink>Intro</NavLink>
+                    <NavLink burger>Intro</NavLink>
                   </Link>
                   <Link href="#tech" passHref>
-                    <NavLink>Technologies</NavLink>
+                    <NavLink burger>Technologies</NavLink>
                   </Link>
                   <Link href="#projects" passHref>
-                    <NavLink>Projects</NavLink>
+                    <NavLink burger>Projects</NavLink>
                   </Link>
                   <Link href="#about" passHref>
-                    <NavLink>About</NavLink>
+                    <NavLink burger>About</NavLink>
                   </Link>
                 </NavMenu>
               </MenuWrapperLow>

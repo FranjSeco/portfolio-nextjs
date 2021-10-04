@@ -66,7 +66,7 @@ const projectsData = [
   {
     src: "https://franjseco.github.io/web_project_4/",
     cover: aroundExImage,
-    title: "Around US Practicums Api",
+    title: "Around US Practicum's Api",
     stack: "ReactJS, CSS, BEM, MongoDB, REST API",
     textOne:
       "It is a blog like web that allows to share images between different users. It also allows to like, dislike and remove images. This version of the project is using Practicum's API for storing user's information and images.",
