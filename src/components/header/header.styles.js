@@ -3,7 +3,7 @@ import { DiCssdeck } from "react-icons/di";
 
 export const Container = styled.nav`
   width: 100%;
-  height: ${(props) => (props.isScrolling ? "55px" : "90px")};
+  height: ${(props) => (props.isScrolling ? "55px" : "70px")};
   margin: 0;
   display: flex;
   align-content: center;

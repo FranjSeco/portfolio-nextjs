@@ -9,7 +9,7 @@ export const Container = styled.div`
   padding-right: 45px;
   width: 50px;
   height: 160px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 1280px) {
     width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
     flex-direction: row;
     justify-content: center;
     align-content: center;
