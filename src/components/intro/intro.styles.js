@@ -95,7 +95,7 @@ export const Title = styled.h2`
     font-weight: 900;
     font-size: 4rem;
     line-height: 50px;
-    margin: 0 auto 20px 0;
+    margin: 0 auto 0 0;
   }
 
   @media screen and (max-width: 380px) {
@@ -133,13 +133,13 @@ export const Text = styled.p`
   font-size: 3rem;
   line-height: auto;
   width: 700px;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 0 0;
 
   @media screen and (max-width: 1280px) {
     font-weight: 900;
     font-size: 2rem;
     line-height: 30px;
-    margin: 0 auto 20px 0;
+    margin: 0;
   }
   @media screen and (max-width: 920px) {
     width: 352px;
@@ -153,7 +153,6 @@ export const Text = styled.p`
   }
 
   @media screen and (max-width: 380px) {
-    margin: 0 auto;
     width: 284px;
   }
 `;

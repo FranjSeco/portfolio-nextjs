@@ -10,16 +10,21 @@ export const Container = styled.nav`
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 3;
   padding-right: 20px;
   align-self: flex-start;
   background-color: ${(props) =>
-    props.isScrolling ? "rgba(255, 255, 255, 0.8)" : "rgba(255, 255, 255, 0.1)"};
+    props.isScrolling ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.3)"};
 
   color: ${(props) => (props.isScrolling ? "#000" : "rgba(0, 0, 0, 1)")};
 
   box-shadow: ${(props) => (props.isScrolling ? "2px 2px 15px 2px #000000" : "none")};
   transition: all 0.2s, background-color 0.6s 0.05s, padding-bottom 0.3s;
+
+
+  @media screen and (max-width: 761px) {
+    box-shadow: ${(props) => (props.open ? "none" : "2px 2px 15px 2px #000000")}
+  }
 
   @media screen and (max-width: 830px) {
     height: ${(props) => (props.isScrolling ? "35px" : "50px")};
@@ -64,7 +69,7 @@ export const AnchorLogo = styled.a`
 export const Overlay = styled.div`
   display: ${(props) => (props.isDisplayed ? "flex" : "none")};
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 110vh;
@@ -73,20 +78,20 @@ export const Overlay = styled.div`
 `;
 
 export const MenuWrapperLow = styled.div`
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 50px 20px 20px 20px;
   position: fixed;
   display: flex;
-  top: 10rem;
+  top: 0;
   align-content: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
   box-shadow: 5px 5px 15px 5px #000000;
   z-index: 1;
   /* transform: translate(-3px, -2px); */
   @media screen and (max-width: 760px) {
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
     right: 50%;
     transform: translateX(50%);
   }
@@ -112,7 +117,7 @@ export const NavLink = styled.a`
   font-size: 3rem;
   font-weight: 900;
   line-height: 32px;
-  z-index: 1001;
+  z-index: 10010000;
   text-transform: uppercase;
   transition-property: transform border-bottom;
   transition-timing-function: ease-in-out;
@@ -153,6 +158,7 @@ export const NavLink = styled.a`
 `;
 
 export const BurgerWrapper = styled.div`
+  z-index: 1;
   position: relative;
   width: 3rem;
   height: 100%;

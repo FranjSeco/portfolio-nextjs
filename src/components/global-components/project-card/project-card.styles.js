@@ -29,7 +29,7 @@ export const ProjectOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;

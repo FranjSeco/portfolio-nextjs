@@ -19,7 +19,7 @@ export const Title = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -30,7 +30,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 500px) {
     flex-direction: column;
-    background-color: #000;
   }
 `;
 

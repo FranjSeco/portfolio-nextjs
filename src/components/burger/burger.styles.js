@@ -7,7 +7,6 @@ export const Burgerbtn = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* width: 3em; */
   height: 3rem;
   background: transparent;
   border: none;
@@ -25,8 +24,9 @@ export const Burgerbtn = styled.button`
   div {
     width: 3rem;
     height: 0.25rem;
-    /* background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")}; */
-    background-color: ${({ isScrolling }) => (isScrolling ? "#000" : "#FFF")};
+    /* background: ${({ open }) => (open ? "#000" : "#fff")}; */
+    /* background-color: ${({ isScrolling }) => (isScrolling ? "#000" : "#FFF")};*/ 
+    background-color: #000; 
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -16,6 +16,11 @@ import {
 
 export const Header = () => {
   const [isScrolling, setIsScrolling] = React.useState(false);
+  const [isDisplayed, setIsDisplayed] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [getWidth, setGetWidth] = React.useState();
+
+
   function handleScroll() {
     if (window.scrollY > 20) {
       setIsScrolling(true);
@@ -28,10 +33,7 @@ export const Header = () => {
   });
 
   // BURGER BTN
-  const [isDisplayed, setIsDisplayed] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
 
-  const [getWidth, setGetWidth] = React.useState();
 
   const updateDimensions = () => {
     setGetWidth(window.innerWidth);
@@ -53,19 +55,40 @@ export const Header = () => {
   };
 
   return (
-    <Container isScrolling={isScrolling}>
-      <Logo>
-        <Link href="#intro" passHref>
-          <AnchorLogo>
-            <Disc />
-          </AnchorLogo>
-        </Link>
-      </Logo>
-      {getWidth < 761 ? (
+    <>
+      <Container isScrolling={isScrolling} open={open}>
+        <Logo>
+          <Link href="#intro" passHref>
+            <AnchorLogo>
+              <Disc />
+            </AnchorLogo>
+          </Link>
+        </Logo>
+        {getWidth < 761 ? (
+          <>
+            <BurgerWrapper onClick={() => handleBurger()}>
+              <Burger open={open} setOpen={setOpen} isScrolling={isScrolling} />
+            </BurgerWrapper>
+          </>
+        ) : (
+          <NavMenu>
+            <Link href="#intro" passHref>
+              <NavLink>Intro</NavLink>
+            </Link>
+            <Link href="#tech" passHref>
+              <NavLink>Technologies</NavLink>
+            </Link>
+            <Link href="#projects" passHref>
+              <NavLink>Projects</NavLink>
+            </Link>
+            <Link href="#about" passHref>
+              <NavLink>About</NavLink>
+            </Link>
+          </NavMenu>
+        )}
+      </Container>
+      {getWidth < 761 && (
         <>
-          <BurgerWrapper onClick={() => handleBurger()}>
-            <Burger open={open} setOpen={setOpen} isScrolling={isScrolling} />
-          </BurgerWrapper>
           {isDisplayed && (
             <Overlay isDisplayed={isDisplayed}>
               <MenuWrapperLow>
@@ -87,22 +110,9 @@ export const Header = () => {
             </Overlay>
           )}
         </>
-      ) : (
-        <NavMenu>
-          <Link href="#intro" passHref>
-            <NavLink>Intro</NavLink>
-          </Link>
-          <Link href="#tech" passHref>
-            <NavLink>Technologies</NavLink>
-          </Link>
-          <Link href="#projects" passHref>
-            <NavLink>Projects</NavLink>
-          </Link>
-          <Link href="#about" passHref>
-            <NavLink>About</NavLink>
-          </Link>
-        </NavMenu>
-      )}
-    </Container>
+      )
+      }
+
+    </>
   );
 };
