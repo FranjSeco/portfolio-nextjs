@@ -20,10 +20,6 @@ export const Container = styled.div`
   width: auto;
   height: auto;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: flex-start;
   padding: 0;
   position: relative;
 
@@ -33,7 +29,7 @@ export const Container = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
 
   @media screen and (max-width: 500px) {
@@ -43,11 +39,11 @@ export const TextWrapper = styled.div`
 
 export const AboutText = styled.p`
   color: #000;
+  height: auto;
   font-weight: 900;
   font-size: 2em;
   line-height: 60px;
-  width: auto;
-  margin: 0 0 20px 0;
+  margin: 0;
 
   @media screen and (max-width: 700px) {
     width: 100%;

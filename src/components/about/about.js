@@ -9,18 +9,14 @@ export const About = () => {
       <Container>
         <TextWrapper>
           <AboutText>
-            I&apos;m certified web developer specialized in React and Node.js, capable of build the
-            front and the back-end. I consider myself a very motivated and hard worker person, with
-            an eye for the detail. I understand the importance of the design, therefore I try to
-            always develop the projects I work on with a mobile first approach. Responsiveness is
-            key in all the projects I participate.
+            I&apos;m certified web developer, focused on delivering well made pages with the latest approaches in the market. Well aware of the needs of modern web development, I&apos;m planing to grow my stack with React Native and TypeScript as soon as possible, in order to match the current job's needs. I consider myself a very motivated and hard worker person, with an eye for the detail. I understand the importance of the design, therefore I always try to pay extra attention to mobile design and and the responsiveness for the different resolutions.
             <br />
             <br />
             If my work has caught your attention, please do not hesitate to contact me.
             <br />
             <br />
-            I’m interested in a full time remote position within a company that allows me to keep
-            growing and improving myself.
+            I’m interested in a full time remote (or partially remote) position in a company that allows me to keep
+            growing and improving myself as web developer.
           </AboutText>
         </TextWrapper>
       </Container>

@@ -14,7 +14,8 @@ export const ProjectCards = styled.div`
   border-radius: 5px;
 
   &:hover {
-    background-color: rgb(17, 34, 64);
+    /* background-color: rgb(17, 34, 64); */
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   @media screen and (max-width: 680px) {
@@ -66,7 +67,7 @@ export const ImageWrapper = styled.div`
   width: 80%;
   height: auto;
   &:hover {
-    background-color: rgb(17, 34, 64);
+    /* background-color: rgb(17, 34, 64); */
   }
 `;
 
@@ -74,7 +75,9 @@ export const ViewProject = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: rgb(27, 44, 74);
+  /* background-color: rgb(27, 44, 74); */
+  background-color: rgb(0, 0, 0, 1);
+  border: solid 1px #fff;
   box-shadow: rgba(0, 0, 0, 0.75) 5px 5px 3.2px;
   text-align: center;
   align-items: center;
@@ -94,7 +97,7 @@ export const ViewProjectText = styled.p`
   transition-property: transform;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 3.2px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0 5px 3.2px; */
 
   &:hover {
     transform: scale(1.3);

@@ -63,7 +63,7 @@ export const ProjectsContainer = styled.div`
   width: 80%;
   height: 50%;
   /* background-color: #273c75; */
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -165,7 +165,8 @@ export const InfoCardWrapper = styled.div`
   align-content: center;
   row-gap: 10px;
   z-index: 5;
-  background-color: rgba(17, 34, 64, 1);
+  /* background-color: rgba(17, 34, 64, 1); */
+  background-color: rgba(0,0,0, 0.9);
   @media screen and (max-width: 1060px) {
     justify-content: flex-start;
     height: 30%;
@@ -210,7 +211,7 @@ export const ProjectStack = styled.p`
 export const InfoCard = styled.div.attrs({ className: "info-card" })`
   width: 90%;
   margin: 0 20px auto auto;
-  background-color: rgb(17, 34, 64);
+  background-color: rgba(0, 0, 0, 0.2);
   box-shadow: rgba(0, 0, 0, 0.7) 2.4px 2.4px 3.2px;
   position: relative;
   border-radius: 5px;

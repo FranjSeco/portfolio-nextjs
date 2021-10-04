@@ -31,33 +31,34 @@ const projectsData = [
     src: "https://prim-u.vercel.app/",
     cover: primuImage,
     title: "Prim-U",
-    stack: "NextJS, Styled-Components, Contentfull",
+    stack: "NextJS, Styled-Components, Contentful",
     textOne:
-      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
+      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from the beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
     repo: "https://github.com/enyelsequeira/prim-u",
   },
   {
     src: "https://franjseco.github.io/apiary/",
     cover: apiaryImage,
     title: "Apiary",
-    stack: "NextJS, Styled-Components, Contentfull",
+    stack: "ReactJS, Styled-Components, Contentful",
     textOne:
-      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
+      "Apiary is a Yandex’s project that offer international companies to build or renew their website by Practicum’s students. This project allows students to get experience in real world project. The project uses a CMS that allowes the client to add, modify or remove information in certain sections of the page.",
     repo: "https://github.com/olivcamj/apiary",
   },
   {
     src: "https://world-news.students.nomoreparties.site/",
     cover: worldsNewsImage,
-    title: "World`s news",
-    stack: "NextJS, Styled-Components, Contentfull",
+    title: "World's news",
+    stack: "ReactJS, CSS-in-JS, MongoDB, REST API",
     textOne:
-      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
+      "Service that uses the NewsApi’s API to search for news around the world on a given keyword. I allows to save and remove articles within the user's profile. In order to do that the user should register and login, otherwise the system page would not allowed the user to use this extra functionality.",
     repo: "https://github.com/FranjSeco/news-explorer-frontend/tree/stage-3",
   },
   {
     src: "https://franjseco.github.io/web_project_3/",
     cover: portlandImage,
     title: "From Portland to Portland",
+    stack: "HTML, JavaScript, CSS, BEM",
     textOne:
       "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
     repo: "https://github.com/FranjSeco/web_project_3",
@@ -66,18 +67,18 @@ const projectsData = [
     src: "https://franjseco.github.io/web_project_4/",
     cover: aroundExImage,
     title: "Around US Practicums Api",
-    stack: "NextJS, Styled-Components, Contentfull",
+    stack: "ReactJS, CSS, BEM, MongoDB, REST API",
     textOne:
-      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
+      "It is a blog like web that allows to share images between different users. It also allows to like, dislike and remove images. This version of the project is using Practicum's API for storing user's information and images.",
     repo: "https://github.com/FranjSeco/web_project_4",
   },
   {
     src: "https://serene-panini-fd9869.netlify.app",
     cover: aroundBeImage,
     title: "Around US Sign Up and Sign In",
-    stack: "NextJS, Styled-Components, Contentfull",
+    stack: "ReactJS, CSS, BEM, MongoDB, REST API",
     textOne:
-      "Prim-U is a beauty & wellness, platform that connects professional service providers and suppliers with curstomers. This was the first project ever I had the oportunity to see the entire process from beggining to the end, starting with the figma design handled by the the web designer, until the presentation of our work to the owner of the company.",
+      "This version of the project has implemented a REST API that allows to register and login. It also uses MongoDB Atlas. This allows to store all the page info and cards added by the users in its own data base.",
     repo: "https://github.com/FranjSeco/react-around-api-full",
   },
 ];
