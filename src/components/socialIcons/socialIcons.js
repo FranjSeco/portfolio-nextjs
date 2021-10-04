@@ -7,7 +7,7 @@ import {
   CopiedWrapper,
   Overlay,
   CloseBtn,
-  CopiedText
+  CopiedText,
 } from "./socialIcons.styles";
 
 export const SocialIcons = () => {
@@ -19,8 +19,6 @@ export const SocialIcons = () => {
     setOpen(true);
     setIsdisplayed("flex");
   };
-
-
 
   return (
     <>
@@ -52,14 +50,13 @@ export const SocialIcons = () => {
               <div />
             </CloseBtn>
             <CopiedText>
-              Email Copied, <br/><br/>Contact me!
-              </CopiedText>
-            
-
+              Email Copied, <br />
+              <br />
+              Contact me!
+            </CopiedText>
           </CopiedWrapper>
         </Overlay>
       )}
-
     </>
   );
 };

@@ -18,7 +18,6 @@ export const Button = styled.button`
   }
 `;
 
-
 export const Overlay = styled.div`
   display: ${(props) => props.isDisplayed};
   justify-content: center;
