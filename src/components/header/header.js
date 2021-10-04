@@ -20,7 +20,6 @@ export const Header = () => {
   const [open, setOpen] = React.useState(false);
   const [getWidth, setGetWidth] = React.useState();
 
-
   function handleScroll() {
     if (window.scrollY > 20) {
       setIsScrolling(true);
@@ -33,7 +32,6 @@ export const Header = () => {
   });
 
   // BURGER BTN
-
 
   const updateDimensions = () => {
     setGetWidth(window.innerWidth);
@@ -110,9 +108,7 @@ export const Header = () => {
             </Overlay>
           )}
         </>
-      )
-      }
-
+      )}
     </>
   );
 };

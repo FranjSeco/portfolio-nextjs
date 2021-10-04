@@ -25,8 +25,8 @@ export const Burgerbtn = styled.button`
     width: 3rem;
     height: 0.25rem;
     /* background: ${({ open }) => (open ? "#000" : "#fff")}; */
-    /* background-color: ${({ isScrolling }) => (isScrolling ? "#000" : "#FFF")};*/ 
-    background-color: #000; 
+    /* background-color: ${({ isScrolling }) => (isScrolling ? "#000" : "#FFF")};*/
+    background-color: #000;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

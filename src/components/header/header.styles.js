@@ -21,9 +21,8 @@ export const Container = styled.nav`
   box-shadow: ${(props) => (props.isScrolling ? "2px 2px 15px 2px #000000" : "none")};
   transition: all 0.2s, background-color 0.6s 0.05s, padding-bottom 0.3s;
 
-
   @media screen and (max-width: 761px) {
-    box-shadow: ${(props) => (props.open ? "none" : "2px 2px 15px 2px #000000")}
+    box-shadow: ${(props) => (props.open ? "none" : "2px 2px 15px 2px #000000")};
   }
 
   @media screen and (max-width: 830px) {
