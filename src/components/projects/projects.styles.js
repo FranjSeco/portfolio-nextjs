@@ -166,7 +166,7 @@ export const InfoCardWrapper = styled.div`
   row-gap: 10px;
   z-index: 5;
   /* background-color: rgba(17, 34, 64, 1); */
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   @media screen and (max-width: 1060px) {
     justify-content: flex-start;
     height: 30%;

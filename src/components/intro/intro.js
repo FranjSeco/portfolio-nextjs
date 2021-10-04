@@ -25,9 +25,7 @@ export const Intro = () => {
         <Paragraph>Hi, my name is</Paragraph>
         <Title>Francisco Seco</Title>
         {/* <Subtitle>I build things for the web.</Subtitle> */}
-        <Text>
-          I&apos;m full-stack developer and I build things with React and Node.js.
-        </Text>
+        <Text>I&apos;m full-stack developer and I build things with React and Node.js.</Text>
         <HiremeIntro />
       </IntroWrapper>
     </Container>
