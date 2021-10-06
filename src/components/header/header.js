@@ -4,11 +4,8 @@ import { Burger } from "../burger/burger";
 
 import {
   Container,
-  Logo,
-  AnchorLogo,
   NavMenu,
   NavLink,
-  Disc,
   BurgerWrapper,
   MenuWrapperLow,
   Overlay,
@@ -67,7 +64,12 @@ export const Header = () => {
         {getWidth < 761 ? (
           <>
             <BurgerWrapper onClick={() => handleBurger()}>
-              <Burger open={open} setOpen={setOpen} setIsScrolling={setIsScrolling} isScrolling={isScrolling} />
+              <Burger
+                open={open}
+                setOpen={setOpen}
+                setIsScrolling={setIsScrolling}
+                isScrolling={isScrolling}
+              />
             </BurgerWrapper>
           </>
         ) : (

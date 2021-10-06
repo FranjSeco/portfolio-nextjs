@@ -1,13 +1,13 @@
 import React from "react";
-import { 
-  Container, 
-  Img, 
-  Paragraph, 
-  Title, 
-  Text, 
-  IntroWrapper, 
+import {
+  Container,
+  Img,
+  Paragraph,
+  Title,
+  Text,
+  IntroWrapper,
   HiremeIntro,
-  IntroOverlay
+  IntroOverlay,
 } from "./intro.styles";
 // import { BgAnimation } from '../../components/bgAnimation/bgAnimation'
 
@@ -16,7 +16,7 @@ import introImage from "../../../public/images/bg-water.jpg";
 export const Intro = () => {
   return (
     <Container id="intro">
-      <IntroOverlay></IntroOverlay>
+      <IntroOverlay />
       <Img
         src={introImage}
         layout="fill"

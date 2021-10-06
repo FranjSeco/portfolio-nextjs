@@ -52,7 +52,6 @@ export const SocialIconsWrapper = styled.div`
   }
 `;
 
-
 export const IconsLink = styled.a`
   text-decoration: none;
   color: #000;

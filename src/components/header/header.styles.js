@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DiCssdeck } from "react-icons/di";
+// import { DiCssdeck } from "react-icons/di";
 
 export const Container = styled.nav`
   width: 100%;
@@ -95,7 +95,6 @@ export const MenuWrapperLow = styled.div`
     right: 50%;
     transform: translateX(50%);
   }
-
 `;
 
 export const NavMenu = styled.div.attrs({ className: "navbar" })`
@@ -126,7 +125,7 @@ export const NavLink = styled.a`
   color: ${(props) => (props.isScrolling ? "#000" : "#fff")};
 
   &:after {
-    content: '';
+    content: "";
     width: 0;
     height: 3px;
     position: absolute;

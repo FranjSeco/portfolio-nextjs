@@ -32,7 +32,7 @@ export const IntroOverlay = styled.div`
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255, 255, 255, 0);
 `;
 
 export const Img = styled(Image)`
@@ -68,7 +68,6 @@ export const IntroWrapper = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-  
     justify-content: flex-start;
     background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
