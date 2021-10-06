@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: 150px 100px 100px 100px;
+  padding: 120px 100px 100px 100px;
   position: relative;
   z-index: 1;
 
@@ -25,16 +25,26 @@ export const Container = styled.div`
   }
 `;
 
+export const IntroOverlay = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0);
+`;
+
 export const Img = styled(Image)`
   position: absolute;
   object-position: center;
-  z-index: -1;
+  z-index: -2;
 `;
 
 export const IntroWrapper = styled.div`
   width: 90vw;
   height: 80vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
   position: relative;
   align-self: center;
   box-shadow: 5px 5px 15px 5px #000000;
@@ -45,8 +55,8 @@ export const IntroWrapper = styled.div`
   z-index: 100;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   align-self: center;
 
   @media screen and (max-width: 1280px) {
@@ -54,10 +64,13 @@ export const IntroWrapper = styled.div`
   }
 
   @media screen and (max-width: 830px) {
-    margin: 0 auto 50px auto;
+    margin: 50px auto 50px auto;
   }
 
   @media screen and (max-width: 640px) {
+  
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 0 auto;
     width: 95vw;
     padding: 10px;
@@ -86,9 +99,9 @@ export const Paragraph = styled.p`
 export const Title = styled.h2`
   color: #fff;
   font-weight: 900;
-  font-size: 7rem;
+  font-size: 100px;
   line-height: 80px;
-  margin: 0 auto 0 auto;
+  margin: 20px auto 0 auto;
   width: 100%;
 
   @media screen and (max-width: 1280px) {
@@ -129,10 +142,10 @@ export const Subtitle = styled.h3`
 export const Text = styled.p`
   color: #fff;
   opacity: 0.8;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 3rem;
   line-height: auto;
-  width: 700px;
+  width: auto;
   margin: 50px 0 0 0;
 
   @media screen and (max-width: 1280px) {
@@ -158,6 +171,6 @@ export const Text = styled.p`
 `;
 
 export const HiremeIntro = styled(Hireme)`
-  margin-top: auto;
+  margin-top: 50px;
   padding: 5px;
 `;

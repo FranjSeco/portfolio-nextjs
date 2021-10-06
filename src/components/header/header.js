@@ -21,7 +21,7 @@ export const Header = () => {
   const [getWidth, setGetWidth] = React.useState();
 
   function handleScroll() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 0) {
       setIsScrolling(true);
     } else setIsScrolling(false);
   }
@@ -55,32 +55,34 @@ export const Header = () => {
   return (
     <>
       <Container isScrolling={isScrolling} open={open}>
-        <Logo>
+        {/* <Logo>
           <Link href="#intro" passHref>
             <AnchorLogo>
-              <Disc />
+              {/* <Disc /> 
+              Francisco
             </AnchorLogo>
           </Link>
-        </Logo>
+        </Logo> */}
+
         {getWidth < 761 ? (
           <>
             <BurgerWrapper onClick={() => handleBurger()}>
-              <Burger open={open} setOpen={setOpen} isScrolling={isScrolling} />
+              <Burger open={open} setOpen={setOpen} setIsScrolling={setIsScrolling} isScrolling={isScrolling} />
             </BurgerWrapper>
           </>
         ) : (
           <NavMenu>
             <Link href="#intro" passHref>
-              <NavLink>Intro</NavLink>
+              <NavLink isScrolling={isScrolling}>Intro</NavLink>
             </Link>
             <Link href="#tech" passHref>
-              <NavLink>Technologies</NavLink>
+              <NavLink isScrolling={isScrolling}>Technologies</NavLink>
             </Link>
             <Link href="#projects" passHref>
-              <NavLink>Projects</NavLink>
+              <NavLink isScrolling={isScrolling}>Projects</NavLink>
             </Link>
             <Link href="#about" passHref>
-              <NavLink>About</NavLink>
+              <NavLink isScrolling={isScrolling}>About</NavLink>
             </Link>
           </NavMenu>
         )}

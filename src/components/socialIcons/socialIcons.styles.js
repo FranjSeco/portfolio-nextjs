@@ -52,6 +52,7 @@ export const SocialIconsWrapper = styled.div`
   }
 `;
 
+
 export const IconsLink = styled.a`
   text-decoration: none;
   color: #000;
@@ -63,8 +64,8 @@ export const IconsLink = styled.a`
     transform: scale(1.2);
   }
   @media screen and (max-width: 1280px) {
-    color: #fff;
     margin: 0 auto;
+    color: #fff;
   }
 `;
 
