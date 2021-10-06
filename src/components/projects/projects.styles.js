@@ -46,8 +46,6 @@ export const ProjectsGrid = styled.div`
 export const Overlay = styled.div`
   display: ${(props) => props.isDisplayed};
   flex-direction: column;
-  justify-items: center;
-  align-items: center;
   position: fixed;
   z-index: 101;
   background-color: rgba(0, 0, 0, 0.8);
@@ -56,6 +54,9 @@ export const Overlay = styled.div`
   bottom: 0;
   left: 0;
   overflow: hidden;
+
+  @media screen and (max-width: 450px) {
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -84,7 +85,7 @@ export const ProjectsContainer = styled.div`
 
   @media screen and (max-width: 450px) {
     width: 95%;
-    height: 70%;
+    height: 90%;
   }
 `;
 
@@ -128,8 +129,8 @@ export const CloseBtn = styled.div.attrs({ className: "close-btn" })`
     }
   }
 
-  @media screen and (max-width: 450px) {
-    top: -40px;
+  @media screen and (max-width: 800px) {
+    top: -35px;
     right: -5px;
   }
 `;

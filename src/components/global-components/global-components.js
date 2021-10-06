@@ -56,7 +56,7 @@ export const Wrapper = styled.section`
     padding: 80px 16px;
   }
 
-  @media screen and (max-width: 335px) {
+  @media screen and (max-width: 400px) {
     padding: 60px 10px;
   }
 `;
