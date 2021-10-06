@@ -133,7 +133,7 @@ export const Projects = () => {
                   Github repository
                 </ProjectLink>
                 <ProjectLink target="_blank" href={elementInOverlay.src}>
-                  Link for the web
+                  Link to the web
                 </ProjectLink>
               </InfoCardWrapper>
             </ProjectsContainer>
