@@ -19,7 +19,7 @@ import { Typescript } from "@styled-icons/simple-icons/Typescript";
 import { Netlify } from "@styled-icons/simple-icons/Netlify";
 import { Vuejs } from "@styled-icons/boxicons-logos/Vuejs";
 import { Angular } from "@styled-icons/simple-icons/Angular";
-import { Java } from '@styled-icons/fa-brands/Java';
+import { Java } from "@styled-icons/fa-brands/Java";
 import {
   Title,
   Container,
@@ -76,7 +76,7 @@ export const Tech = () => {
           </TechTitleWrapper>
           <Techs>
             <Python />
-            <Java />
+            <Java height="50.39px" width="50.64px" />
             <Vuejs />
           </Techs>
         </TechWrapper>
