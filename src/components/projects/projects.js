@@ -25,8 +25,18 @@ import aroundBeImage from "../../../public/images/aroundusbackend.png";
 import aroundExImage from "../../../public/images/aroundusexternalapi.png";
 import portlandImage from "../../../public/images/portland.png";
 import worldsNewsImage from "../../../public/images/worldsnews.png";
+import allCorrect from "../../../public/images/allcorrect.jpg";
 
 const projectsData = [
+  {
+    src: "https://all-correct.vercel.app/",
+    cover: allCorrect,
+    title: "All-Correct",
+    stack: "NextJS, Styled-Components, Framer Motion",
+    textOne:
+      "The allcorrect website is created using Next.js, a front-end React framework; styled-components, a styling component; and Framer Motion, an animation library.",
+    repo: "https://github.com/sayus2884/All_Correct",
+  },
   {
     src: "https://prim-u.vercel.app/",
     cover: primuImage,
@@ -46,7 +56,7 @@ const projectsData = [
     repo: "https://github.com/olivcamj/apiary",
   },
   {
-    src: "https://world-news.students.nomoreparties.site/",
+    src: "https://relaxed-mccarthy-43c30d.netlify.app/",
     cover: worldsNewsImage,
     title: "World's news",
     stack: "ReactJS, CSS-in-JS, MongoDB, REST API",
@@ -78,7 +88,7 @@ const projectsData = [
     title: "Around US Sign Up and Sign In",
     stack: "ReactJS, CSS, BEM, MongoDB, REST API",
     textOne:
-      "This version of the project has implemented a REST API that allows to register and login. It also uses MongoDB Atlas. This allows to store all the page info and cards added by the users in its own data base.",
+      "This version of the project has implemented a REST API that allows to register and login. You can test it out by register and login with any email. It also uses MongoDB Atlas. This allows to store all the page info and cards added by the users in its own data base.",
     repo: "https://github.com/FranjSeco/react-around-api-full",
   },
 ];
