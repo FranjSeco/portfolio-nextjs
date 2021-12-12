@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { DiCssdeck } from "react-icons/di";
+import { motion } from "framer-motion";
 
 export const Container = styled.nav`
   width: 100%;
@@ -32,40 +32,6 @@ export const Container = styled.nav`
   }
 `;
 
-// export const Logo = styled.div`
-//   width: 100%;
-//   margin: 0 0 0 20px;
-//   align-self: center;
-//   cursor: pointer;
-//   @media screen and (max-width: 761px) {
-//     margin: 0;
-//   }
-// `;
-
-// export const Disc = styled(DiCssdeck)`
-//   transform: translateX(-10px);
-//   font-size: 6rem;
-
-//   @media screen and (max-width: 820px) {
-//     font-size: 3rem;
-//   }
-
-//   /* @media screen and (max-width: 320px) {
-//     font-size: 3rem;
-//   } */
-// `;
-
-// export const AnchorLogo = styled.a`
-//   display: inline-flex;
-//   align-items: center;
-//   color: #000;
-//   font-size: 3rem;
-//   font-weight: 900;
-//   &:hover {
-//     color: #505050;
-//   }
-// `;
-
 export const Overlay = styled.div`
   display: ${(props) => (props.isDisplayed ? "flex" : "none")};
   position: fixed;
@@ -77,7 +43,7 @@ export const Overlay = styled.div`
   left: 0;
 `;
 
-export const MenuWrapperLow = styled.div`
+export const MenuWrapperLow = styled(motion.div)`
   background-color: rgba(255, 255, 255, 1);
   padding: 50px 20px 20px 20px;
   position: fixed;
@@ -97,7 +63,7 @@ export const MenuWrapperLow = styled.div`
   }
 `;
 
-export const NavMenu = styled.div.attrs({ className: "navbar" })`
+export const NavMenu = styled(motion.div).attrs({ className: "navbar" })`
   margin: 0;
   display: flex;
   align-content: center;
@@ -110,7 +76,7 @@ export const NavMenu = styled.div.attrs({ className: "navbar" })`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(motion.a)`
   font-size: 3rem;
   font-weight: 700;
   line-height: 32px;

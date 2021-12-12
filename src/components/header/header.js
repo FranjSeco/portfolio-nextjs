@@ -1,6 +1,10 @@
+// ARREGLAR FRAMER NOTION
+
 import Link from "next/link";
 import React from "react";
 import { Burger } from "../burger/burger";
+
+import { sideNavAnim, easeInBottomAnim, staggerOptions, VARIANTS } from "../../styles/animations";
 
 import {
   Container,
@@ -52,15 +56,6 @@ export const Header = () => {
   return (
     <>
       <Container isScrolling={isScrolling} open={open}>
-        {/* <Logo>
-          <Link href="#intro" passHref>
-            <AnchorLogo>
-              {/* <Disc /> 
-              Francisco
-            </AnchorLogo>
-          </Link>
-        </Logo> */}
-
         {getWidth < 761 ? (
           <>
             <BurgerWrapper onClick={() => handleBurger()}>
@@ -93,19 +88,31 @@ export const Header = () => {
         <>
           {isDisplayed && (
             <Overlay isDisplayed={isDisplayed}>
-              <MenuWrapperLow>
-                <NavMenu>
+              <MenuWrapperLow
+                initial={false}
+                animate={open ? VARIANTS.OPEN : VARIANTS.CLOSED}
+                exit={VARIANTS.CLOSED}
+                {...sideNavAnim}>
+                <NavMenu variants={staggerOptions.variants}>
                   <Link href="#intro" passHref>
-                    <NavLink burger>Intro</NavLink>
+                    <NavLink burger {...easeInBottomAnim}>
+                      Intro
+                    </NavLink>
                   </Link>
                   <Link href="#tech" passHref>
-                    <NavLink burger>Technologies</NavLink>
+                    <NavLink burger {...easeInBottomAnim}>
+                      Technologies
+                    </NavLink>
                   </Link>
                   <Link href="#projects" passHref>
-                    <NavLink burger>Projects</NavLink>
+                    <NavLink burger {...easeInBottomAnim}>
+                      Projects
+                    </NavLink>
                   </Link>
                   <Link href="#about" passHref>
-                    <NavLink burger>About</NavLink>
+                    <NavLink burger {...easeInBottomAnim}>
+                      About
+                    </NavLink>
                   </Link>
                 </NavMenu>
               </MenuWrapperLow>
